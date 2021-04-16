@@ -1,14 +1,14 @@
-Первое задание:
+Запустить приёмник:
 ```
-gcc -o f first.c && ./f
-```
-
-Второе задание: 
-```
-gcc -o s second.c && ./s
+gcc -o e emitter.c && ./e
 ```
 
-Третье задание: 
+Отправить сигнал: 
 ```
-gcc -o tc thirdChild.c && gcc -o tp thirdParent.c && ./tp
+gcc -o e emitter.c && ./e <PID> <SIGNAL>
 ```
+
+Где:
+\<PID> - ID, который отображается в приёмнике
+
+\<SIGNAL> - SIGUSR1 или SIGUSR2
